@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 陆 宇轩, 果果, LIC=EPPDY-I3FDV-RE2H3-AXQ0I-T75G3-GWRM8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\yuhui\Desktop\造船\我们的船\实验9：PWM\USER\Template.uvprojx
+Project File Date:  03/12/2018
+
+<h2>Output:</h2>
+Rebuild target 'Template'
+compiling main.c...
+main.c(8): warning:  #177-D: variable "led0pwmval" was declared but never referenced
+        u16 led0pwmval=0;
+main.c(9): warning:  #177-D: variable "dir" was declared but never referenced
+        u8 dir=1;
+main.c: 2 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_syscfg.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling led.c...
+compiling pwm.c...
+compiling beep.c...
+compiling chassispid.c...
+..\HARDWARE\CHASSISIPID\chassispid.c(22): error:  #20: identifier "MaxInc" is undefined
+        ChassisPID_1.pid_out = ChassisPID_1.pid_out > MaxInc ? MaxInc : (ChassisPID_1.pid_out < -MaxInc ? -MaxInc : ChassisPID_1.pid_out);
+..\HARDWARE\CHASSISIPID\chassispid.c(37): error:  #20: identifier "MaxInc" is undefined
+        ChassisPID_2.pid_out = ChassisPID_2.pid_out > MaxInc ? MaxInc : (ChassisPID_2.pid_out < -MaxInc ? -MaxInc : ChassisPID_2.pid_out);
+..\HARDWARE\CHASSISIPID\chassispid.c(52): error:  #20: identifier "MaxInc" is undefined
+        ChassisPID_3.pid_out = ChassisPID_3.pid_out > MaxInc ? MaxInc : (ChassisPID_3.pid_out < -MaxInc ? -MaxInc : ChassisPID_3.pid_out);
+..\HARDWARE\CHASSISIPID\chassispid.c(67): error:  #20: identifier "MaxInc" is undefined
+        ChassisPID_4.pid_out = ChassisPID_4.pid_out > MaxInc ? MaxInc : (ChassisPID_4.pid_out < -MaxInc ? -MaxInc : ChassisPID_4.pid_out);
+..\HARDWARE\CHASSISIPID\chassispid.c(74): error:  #20: identifier "MaxCurrent" is undefined
+        return current > MaxCurrent ? MaxCurrent : (current < -MaxCurrent ? -MaxCurrent : current);
+..\HARDWARE\CHASSISIPID\chassispid.c: 0 warnings, 5 errors
+compiling key.c...
+compiling 24l01.c...
+compiling spi.c...
+compiling timer.c...
+..\HARDWARE\TIMER\timer.c(32): warning:  #223-D: function "ControlLoop" declared implicitly
+                ControlLoop();
+..\HARDWARE\TIMER\timer.c: 1 warning, 0 errors
+compiling bsp.c...
+..\HARDWARE\BSP\bsp.c(6): warning:  #223-D: function "USART1_Init" declared implicitly
+        USART1_Init(115200);    //串口初始化波特率为115200
+..\HARDWARE\BSP\bsp.c(8): warning:  #223-D: function "CAN1_Init" declared implicitly
+        CAN1_Init();
+..\HARDWARE\BSP\bsp.c(9): warning:  #223-D: function "Dbus_Init" declared implicitly
+        Dbus_Init();
+..\HARDWARE\BSP\bsp.c(11): warning:  #223-D: function "TIM13_Init" declared implicitly
+        TIM13_Init();
+..\HARDWARE\BSP\bsp.c(12): warning:  #223-D: function "Adc_Init" declared implicitly
+        Adc_Init();
+..\HARDWARE\BSP\bsp.c: 5 warnings, 0 errors
+"..\OBJ\Template.axf" - 5 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\yuhui\Desktop\造船\我们的船\实验9：PWM\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
